@@ -3,7 +3,11 @@ $colorBtn: #E1A155;
 $tipoLetra: Heebo;
 
 body {
-  background-color: red;  
+  // background-color: red;
+  background-image: url('./images/fondo-principal.jpeg');
+}
+.mainMesero {
+  background-image: url('./images/fondo-secundario.jpeg');
 }
 .containerBtn {
   // background-color: blue;
@@ -22,4 +26,17 @@ body {
   font-size: 36px;
   line-height: 53px;
   color: $colorFont;
+}
+
+.logo {
+  background-color: yellow;
+  // left: 29px;
+  // top: -3px;
+  background-image: url('./images/logo-NAVbar.png');
+  width: 100px;
+  height: 100px;  
+}
+
+.imgLogo {
+  background-image: url('./images/logo-NAVbar.png');
 }

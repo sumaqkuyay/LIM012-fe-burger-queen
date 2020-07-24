@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../components/Logo';
 
 class MainCocina extends React.Component {
     render() {
@@ -7,9 +8,7 @@ class MainCocina extends React.Component {
             <div>
                 <h1> COCINAAAAAAAAAAAAAAAA!</h1>
                 <Link to="/main">
-                    <button>
-                        LOGO
-                    </button>
+                    <Logo />
                 </Link>
             </div>
         )
