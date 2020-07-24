@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
+$colorFont: #402207;
+$colorBtn: #E1A155;
+$tipoLetra: Heebo;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  // background-color: red;
+  background-image: url('./images/fondo-principal.jpeg');
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainMesero {
+  background-image: url('./images/fondo-secundario.jpeg');
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerBtn {
+  // background-color: blue;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+}
+.btnMain {
+  width: 312px;
+  height: 93px;
+  background: $colorBtn;
+  border-radius: 6px;
+
+  font-family: $tipoLetra;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  color: $colorFont;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  background-color: yellow;
+  // left: 29px;
+  // top: -3px;
+  background-image: url('./images/logo-NAVbar.png');
+  width: 100px;
+  height: 100px;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgLogo {
+  background-image: url('./images/logo-NAVbar.png');
 }
