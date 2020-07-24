@@ -5,8 +5,8 @@ class Main extends React.Component {
     render() {
         return(
             <div>
-                <MainBotones name="MESERO" referencia="/mesero"/>
-                <MainBotones name="COCINA" referencia="/cocina"/>
+                <MainBotones name="Mesero" referencia="/mesero"/>
+                <MainBotones name="Jefe de Cocina" referencia="/cocina"/>
             </div>
         )
     }

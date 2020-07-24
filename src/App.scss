@@ -1,0 +1,27 @@
+$colorFont: #402207;
+$colorBtn: #E1A155;
+$tipoLetra: Heebo;
+
+body {
+  background-color: red;  
+}
+.containerBtn {
+  // background-color: blue;
+  display: flex;
+  // flex-direction: column;
+  justify-content: flex-end;
+  // align-items: flex-end;
+}
+.btnMain {
+  width: 312px;
+  height: 93px;
+  background: $colorBtn;
+  border-radius: 6px;
+
+  font-family: $tipoLetra;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  color: $colorFont;
+}

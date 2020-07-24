@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {  BrowserRouter, Route, Switch } from 'react-router-dom';
+// import logo from './logo.svg';
+// import './App.css';
+import {  Route, Switch } from 'react-router-dom';
 import Main from './pages/Main';
 import MainMesero from './pages/MainMesero';
 import MainCocina from './pages/MainCocina';
