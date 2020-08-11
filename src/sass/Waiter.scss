@@ -2,10 +2,12 @@
     display: flex;
 }
 .grid-right{
+    display: flex;
     text-align: center;
-
+    flex-direction: column;
 }
 .grid-left{
+    display: flex;
     text-align: center;
 }
 .content-groups{

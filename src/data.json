@@ -2,7 +2,7 @@
     { 
       "id": 1,
       "title": "Cafe Americano",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://i2.wp.com/cumbrecoffee.com/wp-content/uploads/2020/03/cafe-americano.jpg?fit=300%2C300",
       "price": 5.00,
       "group": "Desayuno",
       "productName":"Café Americano"
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "title": "Cafe con Leche",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://felixlopezcapel.files.wordpress.com/2014/11/cafe-con-leche.jpg",
       "price": 7.00,
       "group": "Desayuno",
       "productName": "Café con Leche"
@@ -18,7 +18,7 @@
     {
       "id": 3,
       "title": "Sandwich de Jamón y Queso",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://www.lacuevade1900.es/wp-content/uploads/2018/08/sandwich-mixto.png",
       "price": 10.00,
       "group": "Desayuno",
       "productName": "Sandwich de Jamón y Queso"
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "title": "Jugo de Frutas Natural",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/320/320834/bottles-of-fruit-juice.jpg?w=1155&h=1541",
       "price": 7.00,
       "group": "Desayuno",
       "productName": "Jugo de Frutas Natural"
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "title": "Hamburguesa Simple Res",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://static.wixstatic.com/media/129590_d124cc53fd834bfeb896742e29202941.png",
       "price": 10.00,
       "group": "Hamburguesas",
       "productName": "Hamburguesa Simple Res"
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "title": "Hamburguesa Doble Res",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/EC/sandwiches-de-carne/Doble-McNifica_new_ec.png",
       "price": 15.00,
       "group": "Hamburguesas",
       "productName": "Hamburguesa Doble Res"
@@ -50,7 +50,7 @@
     {
       "id": 7,
       "title": "Hamburguesa Simple Pollo",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://i.pinimg.com/originals/ae/65/64/ae6564b991daa5aa16a9c8a4172bd5d9.png",
       "price": 10.00,
       "group": "Hamburguesas",
       "productName": "Hamburguesa Simple Pollo"
@@ -58,7 +58,7 @@
     {
       "id": 8,
       "title": "Hamburguesa Doble Pollo",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://ve.all.biz/img/ve/catalog/10441.png",
       "price": 15.00,
       "group": "Hamburguesas",
       "productName": "Hamburguesa Doble Pollo"
@@ -66,7 +66,7 @@
     {
       "id": 9,
       "title": "Hamburguesa Simple Vegetariana",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/elgranchef/h/hamburguesa-avena.jpg",
       "price": 10.00,
       "group": "Hamburguesas",
       "productName": "Hamburguesa Simple Vegetariana"
@@ -74,7 +74,7 @@
     {
       "id": 10,
       "title": "Hamburguesa Doble Vegetariana",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://cheforopeza.com.mx/wp-content/uploads/2019/10/hamburguesa-vegetariana-sitio.jpg",
       "price": 15.00,
       "group": "Hamburguesas",
       "productName": "Hamburguesa Doble Vegetariana"
@@ -82,7 +82,7 @@
     {
       "id": 11,
       "title": "Papas Fritas",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://image.freepik.com/foto-gratis/papas-fritas_74190-1192.jpg",
       "price": 5.00,
       "group": "Acompañamientos",
       "productName": "Papas Fritas"
@@ -90,7 +90,7 @@
     {
       "id": 12,
       "title": "Aros de Cebolla",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://www.muchomasquepizza.com/elda/wp-content/uploads/images/products/products-aroscebolla.png",
       "price": 5.00,
       "group": "Acompañamientos",
       "productName": "Aros de Cebolla"
@@ -98,7 +98,7 @@
     {
       "id": 13,
       "title": "Agua 500ml",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://lh3.googleusercontent.com/proxy/RtubDwCzh5g3dS2Kegjra7KdxPUg5npk9u9dA2va7tZvkkAsFXsWhl7uQVRF3Y77ilMVsOoTT0CvdK5O9L7VvERuskvgPX-awlUbVS4",
       "price": 5.00,
       "group": "Bebidas",
       "productName": "Agua 500ml"
@@ -106,7 +106,7 @@
     {
       "id": 14,
       "title": "Agua 750ml",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://wongfood.vteximg.com.br/arquivos/ids/353738-1000-1000/Agua-San-Carlos-Botella-750-ml-1-30306335.jpg?v=637226146620370000",
       "price": 7.00,
       "group": "Bebidas",
       "productName": "Agua 750ml"
@@ -114,7 +114,7 @@
     {
       "id": 15,
       "title": "Bebida/gaseosa 500ml",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://trendsfruit.com/wp-content/uploads/2020/06/gaseosa-coca-cola-500ml-p.jpg",
       "price": 7.00,
       "group": "Bebidas",
       "productName": "Bebida/gaseosa 500ml"
@@ -122,23 +122,23 @@
     {
       "id": 16,
       "title": "Bebida/gaseosa 750ml",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://5.imimg.com/data5/IT/DH/IS/SELLER-28406699/750ml-sprite-cold-drink-500x500.jpg",
       "price": 10.00,
       "group": "Bebidas",
       "productName": "Bebida/gaseosa 750ml"
     },
     {
       "id": 17,
-      "title": "Jamón",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "title": "Huevo",
+      "image": "https://static8.depositphotos.com/1078289/811/i/450/depositphotos_8110801-stock-photo-fried-egg-on-a-white.jpg",
       "price": 1.00,
       "group": "Adicional",
-      "productName": "Jamón"
+      "productName": "Huevo"
     },
     {
       "id": 18,
       "title": "Queso",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "image": "https://www.cocinista.es/download/bancorecursos/recetas/queso-de-cabra-ligero.jpg",
       "price": 1.00,
       "group": "Adicional",
       "productName": "Queso"
