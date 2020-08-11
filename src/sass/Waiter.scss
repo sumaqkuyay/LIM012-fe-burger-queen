@@ -1,0 +1,24 @@
+.body-waiter{
+    display: flex;
+}
+.grid-right{
+    text-align: center;
+
+}
+.grid-left{
+    text-align: center;
+}
+.content-groups{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content-products{
+  background: rgba(0, 0, 0, 0.79);
+}
+
+.btn-waiter {
+    height: 55px;
+    font-size: 16px;
+    margin: 4%;
+}
