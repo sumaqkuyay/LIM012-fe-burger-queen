@@ -1,0 +1,45 @@
+$colorFont: #402207;
+$colorBtn: #E1A155;
+$tipoLetra: Heebo;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:url('../images/fondo-principal.jpg');
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.component-welcome {
+    display: flex;
+    margin: 100px;
+    align-items: center;
+}
+.prueba{
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.logo-welcome{
+    width: 50%;
+    margin: 5px;
+}
+.btn {
+  background: $colorBtn;
+  border-radius: 6px;
+  font-family: $tipoLetra;
+  font-style: normal;  
+  color: $colorFont;
+}
+
+.btn-welcome {
+  width: 312px;
+  height: 93px;
+  
+  // font-weight: 500;
+  font-size: 36px;
+  // line-height: 53px;
+  margin: 4%;
+}

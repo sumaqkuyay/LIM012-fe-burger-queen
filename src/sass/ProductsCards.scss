@@ -1,0 +1,72 @@
+$yellow-logo: #e8680059;
+.product-card{
+    margin: 10px 15px 30px 15px;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 220px;
+    height: 280px;
+    display: flex;
+    background-size: cover;
+    border: 4px solid #27377A;
+    justify-content: center;
+}
+/*valores del card*/
+.number {
+    margin: 4px 6px;
+    width:30px;
+    height:20px;
+    position: relative;
+    color:#fff;
+    font-size: 14px;
+}
+.img {
+    width: 136px;
+    height: 136px;
+    background: #CDFEE1;
+    border-radius: 8px;
+    border: 4px solid #27377A;
+}
+.Name {
+    font-size: 19px;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.Flex-header {
+    display: flex;
+    // justify-content: center;
+    background: $yellow-logo;
+    text-align: center;
+}
+h1{
+  color: white;
+}
+.Burger-log{
+    width: 100px;
+}
+.btn-nav { 
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    background: none;
+    border-style: none;
+    a {
+      text-decoration: none;
+      color: rgba(64, 34, 7, 1);
+      letter-spacing: 2px;
+      font-size: 15px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      background: rgba(225, 161, 85, 1);
+      border-radius: 5px;
+    }
+}
+// estilos de Roxanita
+
