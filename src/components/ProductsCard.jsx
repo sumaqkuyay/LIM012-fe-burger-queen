@@ -5,8 +5,8 @@ import '../sass/ProductsCards.scss';
 
 const ProductCard = ({ id, title, image, price, productName }) => (
   <div className="product-card">
-    <div className="card">
-      <div className="Card">
+    <div className="card1">
+      <div className="card">
         <img src={image} alt={title} className="img" />
         <p className="Name">{productName}</p>
         <p className="Name">{`S/.${price}.00`}</p>

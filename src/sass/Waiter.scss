@@ -1,26 +1,37 @@
-.body-waiter{
+@import "variables";
+
+.body-waiter {
     display: flex;
+    width: 100%;
 }
-.grid-right{
+.grid-right {
+    width: 60%;
     display: flex;
     text-align: center;
     flex-direction: column;
 }
-.grid-left{
+.grid-left {
     display: flex;
     text-align: center;
 }
-.content-groups{
+.content-groups {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 .content-products{
   background: rgba(0, 0, 0, 0.79);
+  flex-direction: row;
 }
 
 .btn-waiter {
     height: 55px;
     font-size: 16px;
+    font-style: $fontStyle;
     margin: 4%;
+    padding: 5%;
+    // font-weight: 500;
+    line-height: 23px;
+    // text-align: center;
 }

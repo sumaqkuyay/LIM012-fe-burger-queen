@@ -9,6 +9,5 @@ const MainButton = ({ name, reference, classbtn }) => (
       </button>
     </Link>
   </div>
-
 );
 export default MainButton;
