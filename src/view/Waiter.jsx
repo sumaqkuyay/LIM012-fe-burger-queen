@@ -9,10 +9,10 @@ const productList = data.products;
 
 const Waiter = () => {
   const [group, setGroup] = useState('Desayuno');
-
   return (
-    <div>
+    <>
       <Header name="ORDEN DE PEDIDO" />
+      <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" />
       <div className="body-waiter">
         <div className="grid-left">
           <AddOrder />
@@ -20,8 +20,8 @@ const Waiter = () => {
         <div className="grid-right">
           <div className="content-groups">
             <button className="btn btn-waiter" onClick={() => setGroup('Desayuno')} type="button">DESAYUNO</button>
-            <button className="btn btn-waiter" onClick={() => setGroup('Hamburguesas')} type="button">HAMBURGUESAS</button>
-            <button className="btn btn-waiter" onClick={() => setGroup('Acompañamientos')} type="button">ACOMPAÑAMIENTOS</button>
+            <button className="btn btn-waiter" onClick={() => setGroup('Hamburguesas')} type="button">HAMBURGUESA</button>
+            <button className="btn btn-waiter" onClick={() => setGroup('Acompañamientos')} type="button">ACOMPAÑAMIENTO</button>
             <button className="btn btn-waiter" onClick={() => setGroup('Bebidas')} type="button">BEBIDAS</button>
           </div>
           <div className="content-products">
@@ -39,8 +39,7 @@ const Waiter = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
-
 export default Waiter;

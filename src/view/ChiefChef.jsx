@@ -1,13 +1,11 @@
 import React from 'react';
 import Header from '../components/Header';
+import GetOrder from '../components/GetOrder';
 
 const ChiefChef = () => (
   <>
-    <Header name="Jefe de Cocina" />
-    <div className="body-chiefChef">
-      <h2>LISTA DE PENDIENTES</h2>
-    </div>
+    <Header name="JEFE DE COCINA" />
+    <GetOrder />
   </>
-
 );
 export default ChiefChef;

@@ -1,0 +1,50 @@
+.nav-order {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      text-align: start;
+      padding: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 500;
+      &:hover {
+        background: rgba(202, 195, 195, 0.21);   
+      }
+      
+      @media screen and (min-width:764px) {
+        padding: 10px;
+        display: inline-block;
+        height: 83px;
+        display: inline-flex;
+        align-items: center;
+      }
+    }
+  }
+}
+.nav-btn { 
+  right: 10px;
+  top: 40px;
+  background: none;
+  border-style: none;
+  a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #cf1717;
+    border-radius: 5px;
+  }
+}
+:target {
+  background: black;
+}

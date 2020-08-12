@@ -1,22 +1,25 @@
 .head-waiter {
-  width: 1024px;
+  width: 768px;
   height: 82px;
   background: rgba(74, 48, 16, 0.62);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
+  @media screen and (min-width:1024px) {
+   width: 1024px;
+ }
   
 }
 .logo-header{
   width: 80px;
 }
 .btn-header {
+  position: absolute;
+  right: 10px;
+  top:-10px;
   width: 221px;
   height: 48px;
-  
-  // font-weight: 500;
   font-size: 24px;
-  // line-height: 53px;
   margin: 4%;
 }

@@ -7,18 +7,21 @@
 .grid-right {
     width: 60%;
     display: flex;
-    text-align: center;
+    // text-align: center;
     flex-direction: column;
+    width: 45%;
 }
 .grid-left {
     display: flex;
-    text-align: center;
+    //text-align: center;
 }
 .content-groups {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin: 3px;
 }
 .content-products{
   background: rgba(0, 0, 0, 0.79);
@@ -26,12 +29,11 @@
 }
 
 .btn-waiter {
-    height: 55px;
-    font-size: 16px;
-    font-style: $fontStyle;
-    margin: 4%;
-    padding: 5%;
-    // font-weight: 500;
-    line-height: 23px;
-    // text-align: center;
+    height: 40px;
+    font-size: 10px;
+    margin: 1px;
+    padding: 5px;
+    @media screen and (min-width:1024px) {
+      font-size: 14px;
+    }
 }
