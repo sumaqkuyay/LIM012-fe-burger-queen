@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import data from '../data.json';
 import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
-import MainButton from '../components/MainButton';
 import AddOrder from '../components/AddOrder';
 import '../sass/Waiter.scss';
 

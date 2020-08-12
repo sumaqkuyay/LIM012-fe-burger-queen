@@ -1,25 +1,31 @@
-.body-waiter{
+@import "variables";
+
+.body-waiter {
     display: flex;
+    width: 100%;
 }
-.grid-right{
+.grid-right {
+    width: 60%;
     display: flex;
     // text-align: center;
     flex-direction: column;
     width: 45%;
 }
-.grid-left{
+.grid-left {
     display: flex;
     //text-align: center;
 }
-.content-groups{
+.content-groups {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     margin: 3px;
 }
 .content-products{
   background: rgba(0, 0, 0, 0.79);
+  flex-direction: row;
 }
 
 .btn-waiter {

@@ -6,7 +6,8 @@ $pointer: pointer;
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     background-image:url('../images/fondo-principal.jpg');
 }
 
@@ -19,7 +20,8 @@ body{
         margin: 60px;
     }
 }
-.prueba{
+
+.prueba {
     flex-direction: column;
     justify-content: space-around;
 }
@@ -31,10 +33,11 @@ body{
         width: 400px;
     }
 }
+
 .btn {
   background: $colorBtn;
   border-radius: 6px;
-  font-family: $tipoLetra;
+  font-family: $fontType;
   font-style: normal;  
   color: $colorFont;
 }

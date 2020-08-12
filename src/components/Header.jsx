@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo-principal.png';
 import '../sass/Header.scss';
-import MainButton from '../components/MainButton';
+import MainButton from './MainButton';
 
 const Header = (props) => (
   <header className="head-waiter">
@@ -12,4 +12,3 @@ const Header = (props) => (
 );
 export default Header;
 
-/* <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" /> */

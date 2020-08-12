@@ -1,5 +1,5 @@
 import React from 'react';
-import firebase from 'firebase/app';
+// import firebase from 'firebase/app';
 import 'firebase/firestore';
 import '../sass/ProductsCards.scss';
 import MainButton from './MainButton';
