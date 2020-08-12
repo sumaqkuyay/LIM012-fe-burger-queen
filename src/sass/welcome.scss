@@ -1,21 +1,23 @@
 $colorFont: #402207;
 $colorBtn: #E1A155;
 $tipoLetra: Heebo;
+$pointer: pointer;
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
     background-image:url('../images/fondo-principal.jpg');
-    width: 100vw;
-    height: 100vh;
 }
-
 
 .component-welcome {
     display: flex;
-    margin: 100px;
-    align-items: center;
+    margin: 45px;
+    align-items: flex-end;
+    flex-direction: column;
+    @media screen and (min-width:1024px) {
+        margin: 60px;
+    }
 }
 .prueba{
     flex-direction: column;
@@ -23,8 +25,11 @@ body{
 }
   
 .logo-welcome{
-    width: 50%;
-    margin: 5px;
+    width: 280px;
+    top: 23px;
+    @media screen and (min-width:1024px) {
+        width: 400px;
+    }
 }
 .btn {
   background: $colorBtn;
@@ -36,10 +41,12 @@ body{
 
 .btn-welcome {
   width: 312px;
-  height: 93px;
-  
-  // font-weight: 500;
+  height: 70px;
   font-size: 36px;
-  // line-height: 53px;
   margin: 4%;
+  cursor: $pointer;
+    @media screen and (min-width:1024px) {
+        width: 400px;
+        font-size: 50px;
+    }
 }

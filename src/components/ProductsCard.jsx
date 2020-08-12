@@ -4,14 +4,10 @@ import '../sass/ProductsCards.scss';
 // import products from '../products.json';
 
 const ProductCard = ({id, title, image, price, productName}) => (
-  <div className="product-card">
-    <div className="card">
-      <div className="Card">
-        <img src={image} alt={title} className="img" />
-        <p className="Name">{productName}</p>
-        <p className="Name">{`S/.${price}.00`}</p>
-      </div>
-    </div>
+  <div className="card">
+    <img src={image} alt={title} className="width-product" />
+    <p className="price">{`S/.${price}.00`}</p>
+    <p className="name">{productName}</p>
   </div>
 );
 

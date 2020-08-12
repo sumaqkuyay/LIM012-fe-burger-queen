@@ -3,24 +3,31 @@
 }
 .grid-right{
     display: flex;
-    text-align: center;
+    // text-align: center;
     flex-direction: column;
+    width: 45%;
 }
 .grid-left{
     display: flex;
-    text-align: center;
+    //text-align: center;
 }
 .content-groups{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin: 3px;
 }
 .content-products{
   background: rgba(0, 0, 0, 0.79);
 }
 
 .btn-waiter {
-    height: 55px;
-    font-size: 16px;
-    margin: 4%;
+    height: 40px;
+    font-size: 10px;
+    margin: 1px;
+    padding: 5px;
+    @media screen and (min-width:1024px) {
+      font-size: 14px;
+    }
 }
