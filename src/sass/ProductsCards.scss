@@ -1,6 +1,6 @@
-$yellow-logo: #e8680059;
-$tipoLetra: Heebo;
-h1{
+@import "variables";
+
+h1 {
     font-size: 25px;
     color: white;
 }
@@ -46,9 +46,8 @@ h1{
     color: #ffffff;
     font-weight: bold;
 }
-//estilos columna izquierda Sabi
-$font-button: 15px;
-$pointer: pointer;
+
+//estilos columna izquierda
 .add-order {
     background: rgba(218, 199, 182, 0.93);
     display: flex;
@@ -61,7 +60,7 @@ $pointer: pointer;
       margin-bottom: $font-button;
     }
 }
-.order-header{
+.order-header {
     margin: 15px;
     flex-direction: column;
     justify-content: flex-start;
@@ -70,10 +69,10 @@ $pointer: pointer;
     }
    
 }
-.total{
+.total {
     justify-content: center;
 }
-.order-description{
+.order-description {
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -102,7 +101,7 @@ table {
     margin: 4%;
     cursor: $pointer;
 }
-.btn-delete{
+.btn-delete {
     width: 28px; 
     height: 30px;
     background-color: rgba(218, 199, 182, 0);

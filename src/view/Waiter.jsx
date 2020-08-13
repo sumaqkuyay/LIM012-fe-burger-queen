@@ -4,6 +4,7 @@ import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
 import AddOrder from '../components/AddOrder';
 import '../sass/Waiter.scss';
+import MainButton from '../components/MainButton';
 
 const productList = data.products;
 
