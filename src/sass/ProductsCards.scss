@@ -12,22 +12,22 @@ h1 {
     background-color: white;
     border-radius: 5%;
     @media screen and (min-width:1024px) {
-       width: 135px; 
-       height: 130px;
+       width: 100%; 
+       height: 70%;
     }
 }
-.card{
-    width: 31%;
-    height: 190px;
+.card {
+    width: 29%;
+    height: 45%;
     display: inline-block;
-    margin: 2px;
+    margin: 6px;
     // border: 1px solid grey;
     vertical-align: text-bottom;
     cursor: pointer;
     text-align: center;
     @media screen and (min-width:1024px) {
-      width: 32%;
-      height: 200px;
+      width: 28%;
+      height: 45%;
     }
 }
 
@@ -47,81 +47,3 @@ h1 {
     font-weight: bold;
 }
 
-//estilos columna izquierda
-.add-order {
-    background: rgba(218, 199, 182, 0.93);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    div {
-      display: flex;
-      justify-content: space-around;
-      margin-top: $font-button;
-      margin-bottom: $font-button;
-    }
-}
-.order-header {
-    margin: 15px;
-    flex-direction: column;
-    justify-content: flex-start;
-    .input-user{
-        border-radius: 5px;
-    }
-   
-}
-.total {
-    justify-content: center;
-}
-.order-description {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    .box {
-        width: 200px;
-        height: 100px;
-        border-radius: 5px;
-    }
-}
-//tabla
-table {
-   margin-top: $font-button;
-   margin-bottom: $font-button*6;
-   border-collapse: collapse;
-   margin: 10px;
-    td {
-      padding: 2px;
-      border-bottom: 1px solid rgb(105, 65, 31);
-      border-top: 1px solid rgb(105, 65, 31);
-    }
-}
-.btn-order {
-    width: 130px;
-    height: 30px;
-    font-size: 16px;
-    margin: 4%;
-    cursor: $pointer;
-}
-.btn-delete {
-    width: 28px; 
-    height: 30px;
-    background-color: rgba(218, 199, 182, 0);
-    border: none;
-    img {
-        width: 20px;
-        height: 20px;
-        cursor: $pointer;
-    }
-}
-.btn-increaseProduct , .btn-decreaseProduct{
-    width: 25px;
-    height: 25px;
-    left: 17px;
-    padding: 2px;
-    margin:5px;
-    outline: none;
-    border: none;
-    background-color: rgba(182, 113, 32, 1);
-    border-radius: 20px;
-    color: rgba(64, 34, 7, 1);
-    cursor: $pointer;
-}
