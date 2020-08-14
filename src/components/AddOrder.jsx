@@ -1,6 +1,4 @@
 import React from 'react';
-import 'firebase/firestore';
-import '../sass/ProductsCards.scss';
 import MainButton from './MainButton';
 
 const AddOrder = ({product}) => (

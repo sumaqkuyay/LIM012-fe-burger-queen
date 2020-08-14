@@ -1,33 +1,64 @@
-.body-waiter{
+@import "variables";
+
+.body-waiter {
     display: flex;
 }
-.grid-right{
+
+//***** GRID DE LADO IZQUIERDO
+.grid-left {
     display: flex;
-    // text-align: center;
-    flex-direction: column;
-    width: 45%;
-}
-.grid-left{
-    display: flex;
+    width: 53%;
     //text-align: center;
+    @media screen and (min-width:1024px) {
+        // margin-left: 2px;
+        width: 50%;
+    }
 }
-.content-groups{
+
+//***** GRID DE LADO DERECHO
+.grid-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    @media screen and (min-width:1024px) {
+        width: 60%;
+        // margin-left: 2px;
+        // height: 60%;
+
+    }
+    
+}
+
+// DIV DE BOTONES
+.content-groups {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
-    margin: 3px;
-}
-.content-products{
-  background: rgba(0, 0, 0, 0.79);
+    margin-top: 3px;
 }
 
 .btn-waiter {
     height: 40px;
     font-size: 10px;
-    margin: 1px;
-    padding: 5px;
+    margin: 1%;
+    padding: 1%;
     @media screen and (min-width:1024px) {
-      font-size: 14px;
+      font-size: 16px;
+    //   margin: 1%;
+    //   padding: 1%;
     }
 }
+
+.content-products {
+  background: rgba(0, 0, 0, 0.79);
+  flex-direction: row;
+  padding: 2%;
+  @media screen and (min-width:1024px) {
+    padding: 3%;
+    height: 100%;
+    // justify-content: space-between;
+  }
+}
+

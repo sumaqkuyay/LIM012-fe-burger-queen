@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo-principal.png';
-import '../sass/Header.scss';
 
 const Header = (props) => (
   <header className="head-waiter">

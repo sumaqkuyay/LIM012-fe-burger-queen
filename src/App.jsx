@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Welcome from './view/Welcome';
 import ChiefChef from './view/ChiefChef';
 import Waiter from './view/Waiter';
+import './sass/index.scss';
 
 const App = () => (
   <Router>

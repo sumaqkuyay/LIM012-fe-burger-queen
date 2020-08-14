@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../sass/ProductsCards.scss';
 // import products from '../products.json';
 
 const ProductCard = ({ product , miVariable }) => (
@@ -10,6 +9,9 @@ const ProductCard = ({ product , miVariable }) => (
     <p className="name">{product.productName}</p>
   </div>
 );
+// const selectProduct = (name) => {
+//   console.log(name);
+// };
 
 ProductCard.prototype = {
   product: {
