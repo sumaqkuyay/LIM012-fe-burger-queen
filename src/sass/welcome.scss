@@ -13,8 +13,8 @@ body {
 
 .component-welcome {
     display: flex;
-    // margin: 40px;
-    padding: 40px;
+    margin: 3%;
+    padding: 30px;
     align-items: flex-end;
     flex-direction: column;
     @media screen and (min-width:1024px) {
@@ -30,10 +30,10 @@ body {
 }
   
 .logo-welcome{
-    width: 35%;
-    // top: 23px;
+    width: 40%;
+    margin: 3%;
     @media screen and (min-width:1024px) {
-        // width: 270px;
+        width: 270px;
     }
 }
 

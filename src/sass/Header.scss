@@ -1,10 +1,11 @@
+@import "variables";
+
 .head-waiter {
   width: 768px;
   height: 82px;
-  background: rgba(74, 48, 16, 0.62);
+  background: $colorHeader;
   display: flex;
   flex-direction: row;
-  // justify-content: space-around;
   align-items: center;
   @media screen and (min-width:1024px) {
    width: 1024px;
@@ -17,10 +18,14 @@
 
 .btn-header {
   position: absolute;
-  right: 10px;
+  right: 2%;
   top:-10px;
-  width: 221px;
-  height: 48px;
+  width: 25%;
+  height: 8%;
   font-size: 24px;
   margin: 4%;
+  @media screen and (min-width:1024px) {
+    width: 20%;
+    top:-25px;
+  }
 }

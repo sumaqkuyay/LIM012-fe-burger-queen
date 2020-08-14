@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../sass/ProductsCards.scss';
 // import products from '../products.json';
 
 const ProductCard = ({id, title, image, price, productName}) => (
@@ -10,6 +9,9 @@ const ProductCard = ({id, title, image, price, productName}) => (
     <p className="name">{productName}</p>
   </div>
 );
+// const selectProduct = (name) => {
+//   console.log(name);
+// };
 
 ProductCard.prototype = {
   id: PropTypes.number,

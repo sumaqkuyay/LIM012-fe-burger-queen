@@ -1,5 +1,4 @@
 import React from 'react';
-import '../sass/navigationBar.scss';
 
 const GetOrder = () => (
   <div>

@@ -2,19 +2,24 @@
 
 .body-waiter {
     display: flex;
-    // width: 100%;
+    width: 100%;
 }
-.grid-right {
-    // width: 55%;
-    display: flex;
-    // text-align: center;
-    flex-direction: column;    
-}
+
+//***** GRID DE LADO IZQUIERDO
 .grid-left {
     display: flex;
     width: 45%;
     //text-align: center;
 }
+
+//***** GRID DE LADO DERECHO
+.grid-right {
+    width: 55%;
+    display: flex;
+    // text-align: center;
+    flex-direction: column;    
+}
+
 .content-groups {
     display: flex;
     flex-direction: row;
@@ -22,10 +27,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 3px;
-}
-.content-products{
-  background: rgba(0, 0, 0, 0.79);
-  flex-direction: row;
 }
 
 .btn-waiter {
@@ -37,3 +38,9 @@
       font-size: 14px;
     }
 }
+
+.content-products {
+  background: rgba(0, 0, 0, 0.79);
+  flex-direction: row;
+}
+
