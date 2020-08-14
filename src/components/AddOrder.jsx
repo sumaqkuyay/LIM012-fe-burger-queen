@@ -1,10 +1,9 @@
 import React from 'react';
-import firebase from 'firebase/app';
 import 'firebase/firestore';
 import '../sass/ProductsCards.scss';
 import MainButton from './MainButton';
 
-const AddOrder = () => (
+const AddOrder = ({product}) => (
   <div className="add-order">
     <div className="order-header">
       <label htmlFor="user">Cliente:
@@ -30,8 +29,8 @@ const AddOrder = () => (
             <span>1</span>
             <button className="btn-decreaseProduct" type="button">-</button>
           </td>
-          <td>Hamburguesa Doble Vegetariana</td>
-          <td>S/.10.00</td>
+          <td>{product.productName}</td>
+          <td>{`S/. ${product.price}`}</td>
           <td>
             <button className="btn-delete" type="button">
               <img src="https://cdn1.iconfinder.com/data/icons/toolbar-signs/512/trash-512.png" alt="eliminar" />

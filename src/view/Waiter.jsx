@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import data from '../data.json';
 import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
@@ -10,14 +9,19 @@ import '../sass/Waiter.scss';
 const productList = data.products;
 
 const Waiter = () => {
+  const [miProducto, setMiProducto] = useState("Desayuno");
   const [group, setGroup] = useState('Desayuno');
+
+  const darclick = (product) => {
+    setMiProducto(product);
+  };
   return (
     <>
       <Header name="ORDEN DE PEDIDO" />
       <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" />
       <div className="body-waiter">
         <div className="grid-left">
-          <AddOrder />
+          <AddOrder product={miProducto} />
         </div>
         <div className="grid-right">
           <div className="content-groups">
@@ -31,10 +35,8 @@ const Waiter = () => {
               productList.filter((product) => (product.group === group)).map((p) => (
                 <ProductsCard
                   key={p.id}
-                  tittle={p.title}
-                  image={p.image}
-                  price={p.price}
-                  productName={p.productName}
+                  product={p}
+                  miVariable={darclick}
                 />
               ))
           }
