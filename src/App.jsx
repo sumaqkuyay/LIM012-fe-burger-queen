@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, HashRouter, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Switch, HashRouter,
+} from 'react-router-dom';
 import Welcome from './view/Welcome';
 import ChiefChef from './view/ChiefChef';
 import Waiter from './view/Waiter';
