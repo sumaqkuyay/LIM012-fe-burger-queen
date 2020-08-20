@@ -3,11 +3,11 @@ import { render, screen } from '@testing-library/react';
 import Header from '../../components/Header';
 
 describe('Header', () => {
-  test('Render ', () => {
+  test('renders Header component ', () => {
     render(<Header name="ORDEN DE PEDIDO" />);
     screen.debug();
   });
-  test('Render ', () => {
+  test('renders Header component ', () => {
     render(<Header name="JEFE DE COCINA" />);
     screen.debug();
   });
