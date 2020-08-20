@@ -1,0 +1,47 @@
+.Status {
+    display: inline-flex;
+    margin: 10px;
+    width: 40%;
+    flex-direction: column;
+    color: white;
+    background: rgba(4, 4, 4, 0.85);
+    p{
+      margin: 0 10px;
+      width: fit-content;
+      
+      span {
+        color: #e8ba00;
+        font-weight: 300;
+      }
+    }
+    button {
+      position: absolute;
+      bottom: 220px;
+      background: #15c742;
+      border-style: none;
+      color: white;
+      padding: 8px;
+      right: 500px;
+    }
+    .tot {
+      margin: 0;
+      width: auto;
+      padding: 5px;
+      border-top: 3px solid;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  table {
+    margin-top: $font-button;
+    margin-bottom: $font-button*2;
+    td th {
+      text-align: left;
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    i {
+      color: #ffffff;
+      cursor: $pointer;
+    }
+  }

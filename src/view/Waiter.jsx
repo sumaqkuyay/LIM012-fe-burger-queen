@@ -8,11 +8,14 @@ import MainButton from '../components/MainButton';
 const productList = data.products;
 
 const Waiter = () => {
-  const [miProducto, setMiProducto] = useState("Desayuno");
+  // const [miProducto, setMiProducto] = useState('Desayuno');
+  const [products, setProducts] = useState([]);
   const [group, setGroup] = useState('Desayuno');
 
-  const darclick = (product) => {
-    setMiProducto(product);
+  const addAproduct = (product) => {
+    // setProductos(product);
+    setProducts((prevState) => [...prevState, product]);
+
   };
   return (
     <>
@@ -20,7 +23,7 @@ const Waiter = () => {
       <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" />
       <div className="body-waiter">
         <div className="grid-left">
-          <AddOrder product={miProducto} />
+          <AddOrder product={products} />
         </div>
         <div className="grid-right">
           <div className="content-groups">
@@ -35,7 +38,7 @@ const Waiter = () => {
                 <ProductsCard
                   key={p.id}
                   product={p}
-                  miVariable={darclick}
+                  miVariable={addAproduct}
                 />
               ))
           }
