@@ -94,3 +94,8 @@ table {
     color: rgba(64, 34, 7, 1);
     cursor: $pointer;
 }
+
+.btn-decreaseProduct:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
