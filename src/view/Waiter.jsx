@@ -12,19 +12,7 @@ const Waiter = () => {
   const [products, setProducts] = useState([]);
   const [group, setGroup] = useState('Desayuno');
 
-  // const getOrderFirestore = () => firestore.getOrder();
-
-  // React.useEffect = (() => {
-  //   getOrderFirestore();
-  //   console.log(getOrderFirestore);
-  //   // console.log('hola');
-  // }, []);
-
   const addAproduct = (product) => {
-    // const productsOrder = products;
-    // // productsOrder.push(product);
-    // console.log(productsOrder);
-    // setProducts(productsOrder);
     setProducts((prevState) => [...prevState, product]);
   };
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import MainButton from './MainButton';
-import ListPedido from './ListPedido';
+import ProductList from './ProductList';
 import firestore from '../controller/firestore';
 
 const AddOrder = (props) => {
@@ -38,6 +38,18 @@ const AddOrder = (props) => {
     setOrder({ ...initialStateOrder });
   };
 
+  const handleClear = (e) => {
+    e.preventDefault();
+    setOrder({ ...initialStateOrder });
+    console.log('Clear');
+  };
+
+  const remove = (id) => {
+    console.log('vamos a eliminar', id);
+  };
+  // const [priceTotal, setPriceTotal] = useState(0);
+  let price = 0;
+
   return (
     <div className="add-order">
       <div className="order-header">
@@ -72,9 +84,10 @@ const AddOrder = (props) => {
         <tbody>
           {
               props.product.map((p) => (
-                <ListPedido
+                <ProductList
                   key={p.id}
                   product={p}
+                  onremove={remove}
                 />
                 // <td> {p.productName}</td>
                 // <td>{`S/. ${p.price}`}</td>
@@ -84,7 +97,7 @@ const AddOrder = (props) => {
       </table>
       <div className="total">
         <p>Total:</p>
-        <span> S/.10.00</span>
+        <span>{`S/. ${props.product.map((p) =>price += p.price)}`}</span>
       </div>
       <div className="order-description">
         <p>Descripción</p>
@@ -98,9 +111,7 @@ const AddOrder = (props) => {
       </div>
       <div>
         <button className="btn btn-order" type="button" onClick={handleClick}>Enviar a cocina</button>
-        <button className="btn btn-order" type="button">Cancelar pedido</button>
-        {/* <MainButton classbtn="btn btn-order" name="Enviar a cocina" reference="/mozo" />
-        <MainButton classbtn="btn btn-order" name="Cancelar pedido" reference="/mozo" /> */}
+        <button className="btn btn-order" type="button" onClick={handleClear}>Cancelar pedido</button>
       </div>
     </div>
   );
