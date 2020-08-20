@@ -6,12 +6,12 @@ import firestore from '../controller/firestore';
 // const [name, setName] = useState('');
 // const [mesa, setMesa] = useState('');
 
-  /* const functionName = (e) => {
+/* const functionName = (e) => {
     setName(e.target.value);
   };
   const functionMesa = (e) => {
     setMesa(e.target.value);
-  }; */
+}; */
 const AddOrder = (props) => {
   const getOrderFirestore = () => {
     firestore.getOrder();
