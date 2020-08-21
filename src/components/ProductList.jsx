@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
 
 const ProductList = (props) => {
   const [cantProduct, setCantProduct] = useState(1);
@@ -14,13 +13,7 @@ const ProductList = (props) => {
     setCantProduct(cant);
   };
 
-  // const deleteProduct = (e) => {
-  //   e.preventDefault();
-  //   console.log('productos-id: ', product.id);
-  //   console.log('Eliminar producto');
-  // };
   const onremove = (e) => {
-    // console.log(this.props.id);
     e.preventDefault();
     props.onremove('props.product.id');
   };

@@ -1,20 +1,28 @@
 import React from 'react';
 
-const OrderCard = () => (
-  <div className="Status">
+const OrderCard = (getOrder) => (
+  <div className="status">
     <p className="">
-      <span>Cliente: Sabi</span>
+      <span>Nº Pedido: </span>
+      <span className="info">Hola</span>
     </p>
     <p className="">
-      <span>N° de Mesa: 2</span>
+      <span>Cliente:</span>
+      <span className="info">{getOrder.client}</span>
     </p>
     <p className="">
-      <span>Hora de Pedido: 6:19</span>
+      <span>N° de Mesa: </span>
+      <span className="info">{getOrder.table}</span>
+    </p>
+    <p className="">
+      <span>Hora de Pedido: </span>
+      <span className="info">6:19</span>
     </p>
     <p>
       <span>Tiempo Transcurrido: </span>
+      <span className="info">03 min</span>
     </p>
-    <table className="">
+    <table className="tableOrderCard">
       <thead>
         <tr>
           <td>CANT.</td>
