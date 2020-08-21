@@ -15,39 +15,18 @@ const addOrder = (arrayOrder) => {
 };
 
 // LEER LOS DOCS DE LA COLECCION
-const getOrder = () => {
+const getOrder = (callback) => {
   collectionOrder().onSnapshot((query) => {
     const docs = [];
     query.forEach((order) => {
       docs.push({ ...order.data(), id: order.id });
     });
-    console.log(docs);
+    // console.log(docs);
+    callback(docs);
   });
-  // callback(docs);
 };
 
 export default {
   addOrder,
   getOrder,
 };
-/* const addOrder = (table) => {
-  const firestore = firebase.firestore();
-  firestore.collection('addOrder').add({
-    table,
-  });
-}; */
-// export default addOrder;
-
-/* const addOrder = (name, mesa, product, date, estado, total) => firebase
-  .firestore()
-  .collection('order')
-  .add({
-    name,
-    mesa,
-    product,
-    date,
-    estado,
-    total,
-  });
-export default addOrder;*/
-
