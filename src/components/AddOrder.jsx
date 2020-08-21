@@ -12,50 +12,18 @@ import firestore from '../controller/firestore';
   const functionMesa = (e) => {
     setMesa(e.target.value);
 }; */
-const AddOrder = (props) => {
+const AddOrder = ({product, order, handleInputChange, handleClick, handleClear, handleIncrementItem}) => {
   const getOrderFirestore = () => {
     firestore.getOrder();
   };
 
-  useEffect(() => {
-    getOrderFirestore();
-    console.log('Saludo');
-  }, []);
-
-  const initialStateOrder = {
-    client: '',
-    table: '',
-    products: [],
-    total: '',
-    description: '',
-    date: new Date().toLocaleString(),
-    state: 'pendiente',
-  };
-
-  const [order, setOrder] = useState(initialStateOrder);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setOrder({ ...order, [name]: value });
-    // console.log(name, value);
-  };
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    // console.log(order);
-    props.addOrderFirestore(order);
-    setOrder({ ...initialStateOrder });
-  };
-
-  const handleClear = (e) => {
-    e.preventDefault();
-    setOrder({ ...initialStateOrder });
-    console.log('Clear');
-  };
-
-  const remove = (id) => {
-    console.log('vamos a eliminar', id);
-  };
+  // useEffect(() => {
+  //   getOrderFirestore();
+  //   console.log('Saludo');
+  // }, []);
+  // const remove = (id) => {
+  //   console.log('vamos a eliminar', id);
+  // };
   // const [priceTotal, setPriceTotal] = useState(0);
   let price = 0;
 
@@ -91,22 +59,12 @@ const AddOrder = (props) => {
           </tr>
         </thead>
         <tbody>
-          {
-              props.product.map((p) => (
-                <ProductList
-                  key={p.id}
-                  product={p}
-                  onremove={remove}
-                />
-                // <td> {p.productName}</td>
-                // <td>{`S/. ${p.price}`}</td>
-              ))
-            }
+          <ProductList products={order.products} handleIncrementItem={handleIncrementItem} />
         </tbody>
       </table>
       <div className="total">
         <p>Total:</p>
-        <span>{`S/. ${props.product.map((p) =>price += p.price)}`}</span>
+        <span>{`S/. ${order.products.map((p) =>price += p.price)}`}</span>
       </div>
       <div className="order-description">
         <p>Descripción</p>

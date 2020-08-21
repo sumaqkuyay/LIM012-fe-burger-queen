@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import products from '../products.json';
 
-const ProductCard = ({ product , miVariable }) => (
-  <div className="card" onClick={()=>miVariable(product)} >
+const ProductCard = ({ product , onClick }) => (
+  <div className="card" onClick={()=>onClick(product)} >
     <img src={product.image} alt={product.title} className="width-product" />
     <p className="price">{`S/.${product.price}.00`}</p>
     <p className="name">{product.productName}</p>

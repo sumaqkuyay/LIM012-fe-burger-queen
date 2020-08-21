@@ -12,7 +12,9 @@ const App = () => (
     <HashRouter>
       <Switch>
         <Route path="/" exact component={Welcome} />
-        <Route path="/mozo" component={Waiter} />
+        <Route path="/mozo">
+          <Waiter />
+        </Route>
         <Route path="/jefecocina" component={ChiefChef} />
         <Route component={() => (
           <div className="ed-grid">
