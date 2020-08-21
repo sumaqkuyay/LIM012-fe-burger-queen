@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import data from '../data.json';
 import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
@@ -9,8 +9,6 @@ import firestore from '../controller/firestore';
 const productList = data.products;
 
 const Waiter = () => {
-  const [products, setProducts] = useState([]);
-  const [group, setGroup] = useState('Desayuno');
   const initialStateOrder = {
     client: '',
     table: '',
@@ -21,28 +19,48 @@ const Waiter = () => {
     state: 'pendiente',
   };
   const [order, setOrder] = useState(initialStateOrder);
+  const [group, setGroup] = useState('Desayuno');
+
   const handleIncrementItem = (productId) => {
-    console.log(productId);
     const newOrder = { ...order };
     const newItem = newOrder.products.find((element) => element.id === productId);
     newItem.quantity = (newItem.quantity ? newItem.quantity + 1 : 2);
     setOrder(newOrder);
-    console.log(newItem);
   };
-  // const handleDecrementItem=() =>{
 
-  // };
+  const handleDecreacetItem = (productId) => {
+    const newOrder = { ...order };
+    const newItem = newOrder.products.find((element) => element.id === productId);
+    newItem.quantity = (newItem.quantity ? newItem.quantity - 1 : 2);
+    setOrder(newOrder);
+  };
+
+  const total = () => {
+    let acum = 0;
+    const newOrder = { ...order };
+    newOrder.products.map((p) => acum += p.price * p.quantity);
+    return acum;
+  };
+
+  const deleteAproduct = (product) => {
+    const newOrder = { ...order };
+    const itemIndex = newOrder.products.indexOf(product);
+    if (itemIndex !== -1) {
+      newOrder.products.splice(itemIndex, 1);
+    }
+    setOrder(newOrder);
+  };
+
   const addAproduct = (product) => {
     const newOrder = { ...order };
     const itemIndex = newOrder.products.findIndex((element) => element.id === product.id);
     if (itemIndex >= 0) {
       newOrder.products[itemIndex].quantity += 1;
-    }else{
+    } else {
       product.quantity = 1;
       newOrder.products.push(product);
     }
     setOrder(newOrder);
-    // setProducts((prevState) => [...prevState, product]);
   };
 
   const addOrderFirestore = (arrayOrder) => {
@@ -53,12 +71,10 @@ const Waiter = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setOrder({ ...order, [name]: value });
-    // console.log(name, value);
   };
 
   const handleClick = (e) => {
     e.preventDefault();
-    // console.log(order);
     addOrderFirestore(order);
     setOrder({ ...initialStateOrder });
   };
@@ -75,7 +91,7 @@ const Waiter = () => {
       <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" />
       <div className="body-waiter">
         <div className="grid-left">
-          <AddOrder addOrderFirestore={addOrderFirestore} order={order} handleInputChange={handleInputChange} handleClick={handleClick} handleClear={handleClear} handleIncrementItem={handleIncrementItem} />
+          <AddOrder addOrderFirestore={addOrderFirestore} order={order} handleInputChange={handleInputChange} handleClick={handleClick} handleClear={handleClear} handleIncrementItem={handleIncrementItem} handleDecreacetItem={handleDecreacetItem} total={total} deleteAproduct={deleteAproduct} />
         </div>
         <div className="grid-right">
           <div className="content-groups">
