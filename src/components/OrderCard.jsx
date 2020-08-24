@@ -7,18 +7,14 @@ const OrderCard = (getOrder) => (
       <span className="info">Hola</span>
     </p>
     <p className="">
-      <span>Cliente:</span>
-      <span className="info">{getOrder.client}</span>
-    </p>
-    <p className="">
+      <span>Cliente: </span>
+      <span className="info">{getOrder.client} </span>
       <span>N° de Mesa: </span>
-      <span className="info">{getOrder.table}</span>
+      <span className="info">12</span>
     </p>
     <p className="">
       <span>Hora de Pedido: </span>
       <span className="info">6:19</span>
-    </p>
-    <p>
       <span>Tiempo Transcurrido: </span>
       <span className="info">03 min</span>
     </p>

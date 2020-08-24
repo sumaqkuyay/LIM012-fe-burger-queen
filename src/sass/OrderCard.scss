@@ -3,7 +3,7 @@
 .status {
     display: inline-flex;
     margin: 10px;
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     color: white;
     background: $colorOrderCard;
@@ -12,7 +12,8 @@
     font-size: 20px;
     p{
       margin: 0 10px;
-      width: fit-content;      
+      width: fit-content;
+      padding: 5px;   
       .info {
         color: #B67120;
         // font-weight: 500;        

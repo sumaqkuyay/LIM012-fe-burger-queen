@@ -5,8 +5,7 @@ import OrderCard from '../components/OrderCard';
 import firestore from '../controller/firestore';
 
 const ChiefChef = () => {
-  const [orders, getOrders] = useState([]);
-  // console.log(orders);
+
   // const getOrderFirestore = () => {
   //   firestore.getOrder((getOrder) => {
   //     getOrder.forEach((order) => {
@@ -15,6 +14,7 @@ const ChiefChef = () => {
   //   });
   // };
 
+  const [orders, getOrders] = useState([]);
   useEffect(() => {
     // getOrderFirestore();
     firestore.getOrder((item) => {
@@ -23,6 +23,8 @@ const ChiefChef = () => {
     });
     console.log('Saludo');
   }, []);
+
+  // console.log('orders: ', orders);
 
   return (
     <>
