@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import GetOrder from '../components/GetOrder';
+import NavigationBar from '../components/NavigationBar';
 import OrderCard from '../components/OrderCard';
+import firestore from '../controller/firestore';
 
-const ChiefChef = () => (
-  <>
-    <Header name="JEFE DE COCINA" />
-    <GetOrder />
-    <OrderCard />
-  </>
-);
+const ChiefChef = () => {
+  const [orders, getOrders] = useState([]);
+
+  useEffect(() => {
+    // getOrderFirestore();
+    firestore.getOrder((item) => {
+      getOrders(item);
+      console.log('item: ', item);
+    });
+  }, []);
+
+  return (
+    <>
+      <Header name="JEFE DE COCINA" />
+      <NavigationBar />
+      {
+        orders.map((order) => (
+          <OrderCard key={order.id} getOrder={order.arrayOrder.client} />
+        ))
+      }
+    </>
+  );
+};
 export default ChiefChef;

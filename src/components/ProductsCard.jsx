@@ -9,9 +9,6 @@ const ProductCard = ({ product , onClick }) => (
     <p className="name">{product.productName}</p>
   </div>
 );
-// const selectProduct = (name) => {
-//   console.log(name);
-// };
 
 ProductCard.prototype = {
   product: {

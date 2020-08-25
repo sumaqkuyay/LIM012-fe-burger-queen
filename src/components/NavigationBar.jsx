@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GetOrder = () => (
+const NavigationBar = () => (
   <div>
     <nav className="nav-order">
       <ul>
@@ -11,4 +11,4 @@ const GetOrder = () => (
     </nav>
   </div>
 );
-export default GetOrder;
+export default NavigationBar;

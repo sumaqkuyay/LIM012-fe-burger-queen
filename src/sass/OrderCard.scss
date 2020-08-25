@@ -1,21 +1,27 @@
-.Status {
+@import "variables";
+
+.status {
     display: inline-flex;
     margin: 10px;
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     color: white;
-    background: rgba(4, 4, 4, 0.85);
+    background: $colorOrderCard;
+    font-family: $fontType;
+    font-style: $fontStyle;
+    font-size: 20px;
     p{
       margin: 0 10px;
       width: fit-content;
-      
-      span {
-        color: #e8ba00;
-        font-weight: 300;
+      padding: 5px;   
+      .info {
+        color: #B67120;
+        // font-weight: 500;        
       }
     }
+    
     button {
-      position: absolute;
+      // position: absolute;
       bottom: 220px;
       background: #15c742;
       border-style: none;
@@ -28,17 +34,19 @@
       width: auto;
       padding: 5px;
       border-top: 3px solid;
-      font-weight: bold;
+      // font-weight: bold;
       letter-spacing: 2px;
     }
   }
-  table {
+  .tableOrderCard {
     margin-top: $font-button;
     margin-bottom: $font-button*2;
-    td th {
+    td, th {
       text-align: left;
       vertical-align: top;
       border-collapse: collapse;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
     }
     i {
       color: #ffffff;

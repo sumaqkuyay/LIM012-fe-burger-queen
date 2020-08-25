@@ -37,7 +37,7 @@ const Waiter = () => {
     setOrder(newOrder);
   };
 
-  const total = () => {
+  const total = () => { 
     let acum = 0;
     const newOrder = { ...order };
     newOrder.products.map((p) => acum += p.price * p.quantity);
