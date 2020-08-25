@@ -3,12 +3,13 @@ import { render, screen } from '@testing-library/react';
 import Header from '../../components/Header';
 
 describe('Header', () => {
+  const history = jest.fn();
   test('renders Header component ', () => {
-    render(<Header name="ORDEN DE PEDIDO" />);
+    render(<Header name="ORDEN DE PEDIDO" history={history} />);
     screen.debug();
   });
   test('renders Header component ', () => {
-    render(<Header name="JEFE DE COCINA" />);
+    render(<Header name="JEFE DE COCINA" history={history} />);
     screen.debug();
   });
 });
