@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import data from '../data.json';
 import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
@@ -16,12 +15,11 @@ const Waiter = () => {
     products: [],
     total: '',
     description: '',
-    date: new Date().toLocaleString(),
+    date: new Date().toISOString(),
     state: 'pendiente',
   };
   const [order, setOrder] = useState(initialStateOrder);
   const [group, setGroup] = useState('Desayuno');
-  const history = useHistory();
 
   const handleIncrementItem = (productId) => {
     const newOrder = { ...order };
@@ -62,6 +60,7 @@ const Waiter = () => {
       product.quantity = 1;
       newOrder.products.push(product);
     }
+    newOrder.total = total();
     setOrder(newOrder);
   };
 
@@ -89,8 +88,8 @@ const Waiter = () => {
 
   return (
     <>
-      <Header name="ORDEN DE PEDIDO" history={history} />
-      <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" history={history} />
+      <Header name="ORDEN DE PEDIDO" />
+      <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" />
       <div className="body-waiter">
         <div className="grid-left">
           <AddOrder addOrderFirestore={addOrderFirestore} order={order} handleInputChange={handleInputChange} handleClick={handleClick} handleClear={handleClear} handleIncrementItem={handleIncrementItem} handleDecreacetItem={handleDecreacetItem} total={total} deleteAproduct={deleteAproduct} />

@@ -1,11 +1,11 @@
 import firebase from './main';
 
 // COLECCION EN FIRESTORE - ADD ORDER
-const collectionOrder = () => firebase.firestore().collection('addOrder');
+const collectionOrder = () => firebase.firestore().collection('Orders');
 
 // AGREGAR DOCS A LA COLECCION
-const addOrder = (arrayOrder) => {
-  collectionOrder().add({ arrayOrder })
+const addOrder = (order) => {
+  collectionOrder().add(order)
     .then((docRef) => {
       console.log('Document written with ID: ', docRef.id);
     })

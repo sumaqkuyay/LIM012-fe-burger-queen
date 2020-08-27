@@ -1,7 +1,6 @@
 import React from 'react';
 
-const OrderCard = (getOrder) => {
-  console.log('card: ', getOrder);
+const OrderCard = ({order}) => {
   return (
     <div className="status">
       <p className="">
@@ -10,13 +9,13 @@ const OrderCard = (getOrder) => {
       </p>
       <p className="">
         <span>Cliente: </span>
-        <span className="info">{getOrder.client} </span>
+        <span className="info">{order.client} </span>
         <span>N° de Mesa: </span>
-        <span className="info">12</span>
+        <span className="info">{order.table}</span>
       </p>
       <p className="">
-        <span>Hora de Pedido: </span>
-        <span className="info">6:19</span>
+        <span>Fecha de Pedido: </span>
+        <span className="info">{new Date(order.date).toLocaleString('es-PE')}</span>
         <span>Tiempo Transcurrido: </span>
         <span className="info">03 min</span>
       </p>
@@ -29,15 +28,17 @@ const OrderCard = (getOrder) => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Hamburguesa de Pollo</td>
-            <td>15.00</td>
-          </tr>
+          {order.products.map((item) => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              <td>{item.productName}</td>
+              <td>{item.price}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
       <p className="tot">
-        TOTAL = S/.
+        TOTAL = S/.{order.total}
       </p>
       <button type="button">
         LISTO!

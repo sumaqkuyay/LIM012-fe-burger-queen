@@ -1,29 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import Header from '../components/Header';
 import NavigationBar from '../components/NavigationBar';
 import OrderCard from '../components/OrderCard';
 import firestore from '../controller/firestore';
 
 const ChiefChef = () => {
-  const [orders, getOrders] = useState([]);
-  const history = useHistory();
+  const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     // getOrderFirestore();
-    firestore.getOrder((item) => {
-      getOrders(item);
-      console.log('item: ', item);
+    firestore.getOrder((orderList) => {
+      setOrders(orderList);
+      console.log('orders: ', orderList);
     });
   }, []);
 
   return (
     <>
-      <Header name="JEFE DE COCINA" history={history} />
+      <Header name="JEFE DE COCINA" />
       <NavigationBar />
       {
         orders.map((order) => (
-          <OrderCard key={order.id} getOrder={order.arrayOrder.client} />
+          <OrderCard key={order.id} order={order} />
         ))
       }
     </>
