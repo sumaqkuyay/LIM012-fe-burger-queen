@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo-principal.png';
+import logo from '../assets/logo-principal.png';
 import MainButton from '../components/MainButton';
 
 const Welcome = () => (
