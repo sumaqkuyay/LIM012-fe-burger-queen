@@ -15,18 +15,27 @@ const addOrder = (order) => {
 };
 
 // LEER LOS DOCS DE LA COLECCION
-const getOrder = (callback) => {
-  collectionOrder().onSnapshot((query) => {
+const getOrder = (orderState) => new Promise((resolve, reject) => {
+  collectionOrder().where('state', '==', orderState).onSnapshot((query) => {
     const docs = [];
     query.forEach((order) => {
       docs.push({ ...order.data(), id: order.id });
     });
     // console.log(docs);
-    callback(docs);
+    resolve(docs);
+  });
+});
+
+const updateOrderState = (id, status) => {
+  const deliveredDate = new Date().toISOString();
+  firebase.firestore().collection('Orders').doc(id).update({
+    state: status,
+    deliveredDate,
   });
 };
 
 export default {
   addOrder,
   getOrder,
+  updateOrderState,
 };

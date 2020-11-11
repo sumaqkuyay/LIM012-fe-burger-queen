@@ -35,7 +35,7 @@ const Waiter = () => {
     setOrder(newOrder);
   };
 
-  const total = () => { 
+  const total = () => {
     let acum = 0;
     const newOrder = { ...order };
     newOrder.products.map((p) => acum += p.price * p.quantity);
@@ -92,7 +92,7 @@ const Waiter = () => {
       <MainButton classbtn="btn btn-header" name="Estados de Pedido" reference="/mozo" />
       <div className="body-waiter">
         <div className="grid-left">
-          <AddOrder addOrderFirestore={addOrderFirestore} order={order} handleInputChange={handleInputChange} handleClick={handleClick} handleClear={handleClear} handleIncrementItem={handleIncrementItem} handleDecreacetItem={handleDecreacetItem} total={total} deleteAproduct={deleteAproduct} />
+          <AddOrder order={order} handleInputChange={handleInputChange} handleClick={handleClick} handleClear={handleClear} handleIncrementItem={handleIncrementItem} handleDecreacetItem={handleDecreacetItem} total={total} deleteAproduct={deleteAproduct} />
         </div>
         <div className="grid-right">
           <div className="content-groups">

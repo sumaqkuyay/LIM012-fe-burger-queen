@@ -20,7 +20,16 @@
       }
     }
     
-    button {
+    .button-ready {
+      // position: absolute;
+      bottom: 220px;
+      background: #C32A2A;
+      border-style: none;
+      color: white;
+      padding: 8px;
+      right: 500px;
+    }
+    .button-delivered {
       // position: absolute;
       bottom: 220px;
       background: #15c742;
@@ -29,7 +38,7 @@
       padding: 8px;
       right: 500px;
     }
-    .tot {
+    .total {
       margin: 0;
       width: auto;
       padding: 5px;

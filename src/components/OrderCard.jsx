@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrderCard = ({order}) => {
+const OrderCard = ({ order, changeState }) => {
   return (
     <div className="status">
       <p className="">
@@ -15,9 +15,9 @@ const OrderCard = ({order}) => {
       </p>
       <p className="">
         <span>Fecha de Pedido: </span>
-        <span className="info">{new Date(order.date).toLocaleString('es-PE')}</span>
+        <span className="info">{(new Date(order.date)).toLocaleString('es-PE')}</span>
         <span>Tiempo Transcurrido: </span>
-        <span className="info">03 min</span>
+        <span className="info">{(new Date(new Date() - new Date(order.date))).getMinutes()}min</span>
       </p>
       <table className="tableOrderCard">
         <thead>
@@ -37,12 +37,19 @@ const OrderCard = ({order}) => {
           ))}
         </tbody>
       </table>
-      <p className="tot">
+      <p className="total">
         TOTAL = S/.{order.total}
       </p>
-      <button type="button">
+      { order.state === 'pendiente' && (
+      <button type="button" className="button-ready" onClick={() => changeState(order.id,'listo')}>
         LISTO!
       </button>
+      )}
+      { order.state === 'listo' && (
+      <button type="button" className="button-delivered" onClick={() => changeState(order.id,'entregado')}>
+        Entregado!
+      </button>
+      )}
     </div>
   );
 };
