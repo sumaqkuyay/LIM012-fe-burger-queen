@@ -51,7 +51,7 @@ const ChiefChef = () => {
   // render() {
   return (
     <>
-      <Header name="JEFE DE COCINA" />
+      <Header name="JEFE DE COCINA sabi" />
       <NavigationBar filterByState={filterByState} />
       {
         orders.map((order) => (
